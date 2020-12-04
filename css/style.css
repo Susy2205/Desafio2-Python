@@ -431,4 +431,21 @@ a.bold:hover {
 .row-footer .fixed-top {
   left: 90%;
 }
+
+.podcastAside .asideContainer .imagenPodcast {
+  width: 30%;
+}
+
+.asideContainer {
+  background-color: #f9fafa;
+}
+
+.authorBio .asideContainerP .imagenTwarog {
+  width: 10%;
+  border-radius: 50%;
+}
+
+.asideContainerP {
+  background-color: #f9fafa;
+}
 /*# sourceMappingURL=style.css.map */
