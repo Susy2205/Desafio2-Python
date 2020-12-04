@@ -15,13 +15,12 @@
         }
 
     }
-    
+    background-color: white;
 }
 
 .post-body{
-    padding-top: 1em;
-    padding-bottom: .5em;
     border-bottom:1px solid #8192a5;
+    padding: 1em 1em .5em 1em
 }
 
 .post-body-top{
@@ -64,12 +63,19 @@
         line-height:1.25em;
         overflow-wrap: anywhere;
         word-break: break-word;
+        &:hover{
+            color:#3b49df;
+        }
         
     }
 
     .post-body-content-tags{
       a{
         text-decoration: none;
+        color:#64707d;
+        &:hover{
+            color: black;
+        }
       }
     }
 
@@ -104,8 +110,14 @@
 
 .bold{
     font-weight: bold;
+    
 }
 
+a.bold{
+    &:hover{
+        color:black;
+    }
+}
 
 .post-body-content-bottom{
     display: flex;
@@ -114,10 +126,20 @@
     font-size: .875em;
     line-height: 1.25em;
     .post-body-content-bottom-details{
-        a{
+        button{
             padding-left: .2em;
             padding-right: 1em;
             color: black;
+            outline:none;
+            border: none;
+            background-color: white;
+            &:hover{
+                display: inline-block;
+                vertical-align: baseline;
+                background-color: #f1eded;
+                height: 2em;
+                border-radius: 5px;
+            }
         }
     }
 }
@@ -129,4 +151,23 @@
 
 
 
+@media only screen and (min-width:768px){
+    .mainArticle{
+        border-radius: 5px;
+        margin-bottom: .5em;
+        margin-right: .5em;
+        .post-container{
+    
+            .post-image{
+               border-top-left-radius: 5px;
+               border-top-right-radius: 5px;
+            }
+    
+        }
+    }
 
+
+    .post-body{
+        border-bottom: none;
+    }
+}
