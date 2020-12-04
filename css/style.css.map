@@ -11,7 +11,9 @@
         "_navPosts.scss",
         "_aside_left_index.scss",
         "_aside_left_contenido.scss",
-        "_footer.scss"
+        "_footer.scss",
+        "_aside_right_principal.sass",
+        "_aside_right_post.sass"
     ],
     "names": [],
     "file": "style.css"
