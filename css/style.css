@@ -1,1 +1,80 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.container {
+  background-color: #eef0f1;
+}
+
+.container a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #202428;
+}
+
+.aside-left .sidebar-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.aside-left .sidebar-profile .avatar {
+  border-radius: 100%;
+  width: 38%;
+  height: 38%;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.aside-left .sidebar-profile .nombre .name {
+  font-weight: 700 !important;
+  font-size: 1rem !important;
+  color: black;
+  word-break: break-word !important;
+}
+
+.aside-left .sidebar-profile .nombre .username {
+  font-size: var(--fs-s) !important;
+  opacity: 0.75 !important;
+  color: #202428;
+  word-break: break-word !important;
+}
+
+.aside-left .sidebar-navigation-links .sidebar_navigation {
+  padding: 0.5rem;
+}
+
+.aside-left .tags {
+  margin-bottom: 10rem !important;
+}
+
+.aside-left .tags .header_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.aside-left .tags .header_nav .titulo_tags {
+  font-size: 1rem;
+}
+
+.aside-left .imagen_bottom .imagen_left {
+  margin-top: 15px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.aside-left .imagen_bottom .imagen_shop {
+  color: #3b49df;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */
