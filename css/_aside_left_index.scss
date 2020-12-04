@@ -1,5 +1,5 @@
-.container{
-    background-color: #eef0f1;
+.container-fluid{
+    background-color: $bg-container-fluid;
     a{
         cursor: pointer;
         text-decoration: none;
@@ -8,6 +8,11 @@
 }
 
 .aside-left{
+    .nav_profile{
+        &:hover{
+            background-color: #d2d6db;
+        }
+    }
     .sidebar-profile{
         display: flex;
         justify-content: flex-start;
@@ -38,6 +43,9 @@
      .sidebar-navigation-links{
         .sidebar_navigation{
             padding: 0.5rem;
+            &:hover{
+                background-color: #d2d6db;
+            }
         }    
     }
     .tags{
@@ -48,6 +56,7 @@
             .titulo_tags{
                 font-size: 1rem;
             }
+
         }
     }
     .imagen_bottom{

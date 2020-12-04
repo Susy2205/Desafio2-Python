@@ -1,0 +1,33 @@
+.container_footer{
+    background: #d2d6db;
+}
+
+.row-footer{
+    color: #4d5760;
+    padding: 1.25rem;
+    position: relative;
+    text-align: center;
+    margin-bottom: 60px;
+    .nav-footer{
+        font-size: .875rem;
+        nav a{
+            display: inline-block !important;
+        }
+    }
+    .divisor-footer{
+        border: none;
+        border-top: 1px solid #4d5760;
+        opacity: 0.15;
+    }
+    
+    .texto-link-footer{
+        color:#202428;
+        font-weight: 700;
+        font-size: .875rem;
+    }
+
+    .fixed-top{
+        left: 90%;
+    }
+    
+}
