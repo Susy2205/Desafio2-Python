@@ -1,14 +1,17 @@
-.d-flex.align-items-center.header-nav-post{
+.header-nav-post{
     padding: .650em;
 }
 
 .d-flex.align-items-center.justify-content-between.select-container{
-    width: 80%;
+    width: 100%;
 }
 
 .subtitlePost{
     font-size: 1.125rem ;
     margin: 0;
+}
+.nav-post{
+    width: 80%;
 }
 
 .nav-icon-posts{
@@ -17,4 +20,22 @@
 
 .nav-icon-ray{
     margin-left: 1em;
+}
+
+
+.crayons-tabs__item{
+   border: none;
+    outline: none;
+
+    &:hover{
+        background-color: #8992f765;
+        border-radius: 5px;
+        outline: none;
+    }
+
+    &:active ,&:focus{
+        border-bottom: 3px solid #3B49DF;
+        outline: none;
+        font-weight: bold;
+    }
 }
