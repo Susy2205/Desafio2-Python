@@ -1,0 +1,132 @@
+.main-principal{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.mainArticle{
+    
+    .post-container{
+    
+        .post-image{
+            width: 100%;
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+        }
+
+    }
+    
+}
+
+.post-body{
+    padding-top: 1em;
+    padding-bottom: .5em;
+    border-bottom:1px solid #8192a5;
+}
+
+.post-body-top{
+    display: flex;
+    margin-bottom: 1em;
+
+    .post-body-top-autor{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+       img{
+        width: 2em;
+        border-radius: 50%;
+        &:hover{
+            cursor: pointer;
+        }
+       }
+    }
+
+    .post-body-top-autor-desc{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: .25em;
+        line-height: 1em;
+
+        a{
+            color:#4D5760;
+            text-decoration: none;
+        }
+    }
+}
+
+.post-body-content{
+    padding-left: 2.25em;
+    
+    h2{
+        font-size: 1.5em;
+        line-height:1.25em;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+        
+    }
+
+    .post-body-content-tags{
+      a{
+        text-decoration: none;
+      }
+    }
+
+    .post-body-content-bottom{
+        margin-top: .5em;
+        .post-body-content-bottom-save{
+            display: flex;
+            align-items: center;
+
+            button{
+                background-color: #c3c9d1e1;
+                color: black;
+                border: none;
+                &:hover{
+                    background-color: #acb0b4;
+                }
+            }
+        }
+    }
+}
+
+.main-post-tag{
+    color:#64707d;
+    line-height: 1.3em;
+    display:inline-block;
+    padding: .25em;
+    font-size: .85em;
+    &:hover{
+        color:black;
+    }
+}
+
+.bold{
+    font-weight: bold;
+}
+
+
+.post-body-content-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .875em;
+    line-height: 1.25em;
+    .post-body-content-bottom-details{
+        a{
+            padding-left: .2em;
+            padding-right: 1em;
+            color: black;
+        }
+    }
+}
+
+.time-read{
+    color:#64707d;
+    margin-right: .5em;
+}
+
+
+
+
