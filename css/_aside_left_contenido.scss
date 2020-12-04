@@ -30,11 +30,14 @@
 }
 
 /* version tablet medium */
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: $size-md){
     .aside-left{
         position: relative;
         .links{
             flex-direction: column;
+            .link_button{
+                flex-direction: column;
+            }
         }
     }   
     
