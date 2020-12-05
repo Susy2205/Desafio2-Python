@@ -8,9 +8,36 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="navbar">
-        
-    </div>
+    <!-- <nav class="navbar navbar-dark bg-white">
+       
+      </nav> -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img src="assets/images/DEVHome.svg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+             </ul>
+          
+        </div>
+      </nav>
+
+    
     <!--Estructura principal-->
     <div class="container-fluid">
         <div class="row">
@@ -48,67 +75,147 @@
                             </div>
                         </aside>
                     </div>
-                    <div class="col-12 col-md-9 col-lg-8">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quis labore deserunt odit, pariatur ducimus cumque soluta sed nostrum! Animi officiis culpa delectus!
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quis labore deserunt odit, pariatur ducimus cumque soluta sed nostrum! Animi officiis culpa delectus!
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quis labore deserunt odit, pariatur ducimus cumque soluta sed nostrum! Animi officiis culpa delectus!
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quis labore deserunt odit, pariatur ducimus cumque soluta sed nostrum! Animi officiis culpa delectus!
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quis labore deserunt odit, pariatur ducimus cumque soluta sed nostrum! Animi officiis culpa delectus!
-                        </p>
+                    <div class="col-12 col-md-11 col-lg-8 main-contenido">
+                        <div class="Post_main">
+                            <article class="m-2 articulo-main">
+                                <header class="p-2 header_articulo-contenido">
+                                    <img class="p-0 imagen-contenido" src="assets/images/Post.webp" alt="">
+                                    <h2 class="md-1 articulo-parrafo">
+                                        Creating a messy JavaScript bug with an indexed array
+                                    </h2>
+                                    <button type="button" class="btn btn-warning boton-subheader">#javascript</button>
+                                    <div class="post-body-top">
+                                        <div class="p-2 post-body-top-autor subheader">
+                                            <img src="assets/images/ProfileImage2.webp">
+                                        </div>
+                                        <div class="post-body-top-autor-desc">
+                                            <a href="" >
+                                                <span class="bold">Cassidy Williams</span> Dec 1 (1 Day ago)</a>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </header>
+                                <div class="body-contenido">
+                                    <p class="p-2">Sometimes, you want to make sure JavaScript app will behave in a unpredictable way, so that finding a cause will take ages. A great way to do it is to manipulate data we receive, and return random ones at a random moment. So lets assume we receive an array of numbers:</p>
+                                    <div class="p-2">
+                                        <p class="plaintext">
+                                             1 2 3 4 5 6 and so on
+                                        </p>
+                                    </div>
+                                    <p class="p-2">Application reads items one by one:</p>
+                                    <div class="p-2">
+                                        <p class="plaintext">
+                                             1 2 3 
+                                        </p>
+                                    </div>
+                                    <p class="p-2">But suddenly, somethings goes wrong, and next values received are:</p>
+                                    <div class="p-2">
+                                        <p class="plaintext">
+                                            34 54 53
+                                        </p>
+                                    </div>
+                                    <p class="p-2">As you can see for some time values received are correct, but than suddenly, they become random. This is a  <span class="bold">PlotTwistArray!</span> </p>
+                                    <p class="p-2">To create a PlotTwistArray implementation described, you have to use classes and Proxy. Both are available with latest desktop Chrome, make sure your browser also supports it.</p>
+                                    <p class="p-2">What happens here is that a PlotTwistArray class is created. When a new object is created by providing an array of numbers, a second array is generated. plotTwistData contains random numbers that will be used to create the twist. Also plotTwistMoment is generated - a value that describes when data will go wrong.</p>
+                                    <p class="p-2 bold">Sidenotes</p>
+                                    <p>Input array has to contain positive numbers</p>
+                                </div>
+                                <section class="border section-discussion">
+                                    <header class="d-flex justify-content-around">
+                                        <h2>
+                                            Discussion
+                                        </h2>
+                                        <button type="button" class="btn btn-outline-dark">Subscribe</button>
+                                    </header>
+                                    <div class="post-body-top">
+                                        <div class="p-2 post-body-top-autor subheader">
+                                            <img src="assets/images/profile.webp">
+                                        </div>
+                                        <div class="p-2">
+                                           <textarea class="area-texto" name="mensaje" for="mensaje" placeholder="Add to the discussion" maxlength="300"></textarea>
+                                        </div>
+                                    </div>
+                                </section>
+                            </article>
+                            <article class="m-2 p-3 articulo-main">
+                                <p class="bold">Read Next</p>
+                                <div class="post-body-top">
+                                    <div class="p-2 post-body-top-autor subheader">
+                                        <img src="assets/images/otro_1.webp">
+                                    </div>
+                                    <div class="p-2">
+                                       <p class="bold">ReactJs Animation: Create login/register form with react-spring animation</p>
+                                    </div>
+                                </div>
+                                <div class="post-body-top">
+                                    <div class="p-2 post-body-top-autor subheader">
+                                        <img src="assets/images/otro_2.webp">
+                                    </div>
+                                    <div class="p-2">
+                                        Beginners Guide to MS Teams Development  #1: Tabs
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        
 
 
                     </div>
                     <div class="col-12 col-md-11 col-lg-3">
                         <aside class="aside-right">
                             <article class="authorBio">
-                                <div class="asideContainerP">
-                                    <img src="assets/images/ProfileImage.webp" class="imagenTwarog">
-                                    <h2>Adrian Twarog</h2>
+                                <div class="container asideContainerP">
+                                    <h4><img src="assets/images/ProfileImage.webp" class="imagenTwarog">Adrian Twarog</h4>
                                     <p>My goal is to make useful and helpful advice and content that will help others! New content everyday, please leave feedback if there is something you want to see!</p>
                                     <button type="button" class="btn btn-primary btn-lg btn-block">Follow</button>
-                                    <p>WORK</p>
-                                    <p>Designer and Developer at YouTube Channel</p>
-                                    <p>LOCATION</p>
-                                    <p>Australia</p>
-                                    <p>EDUCATION</p>
-                                    <p>self</p>
-                                    <p>JOINED</p>
-                                    <p>12 ene. 2020</p>
+                                    <div class="d-flex flex-column justify-content-start">
+                                        <p>WORK</p>
+                                        <p>Designer and Developer at YouTube Channel</p>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-start">
+                                        <p>LOCATION</p>
+                                        <p>Australia</p>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-start">    
+                                        <p>EDUCATION</p>
+                                        <p>self</p>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-start">
+                                        <p>JOINED</p>
+                                        <p>12 ene. 2020</p>
+                                    </div>
                                 </div>
                             </article>
                             <article class="ListingsAside">
-                                <div class="asideContainerP">
-                                    <h2>More from Adrian Twarog</h2>
-                                    <p>40 Amazing Developers You Should Follow on Youtube</p>
-                                    <li>
-                                        #web deb
-                                        #tutorial 
-                                        #begginers 
-                                        #YouTube
-                                    </li>
-                                    <p>Portafolio Designe Enchancement - Enchance UI</p>
-                                    <li>
-                                        #web deb
-                                        #designe
-                                        #tutorial
-                                        #begginers
-                                    </li>
-                                    <p>Enchance UI - Designe for Developers</p>
-                                    <li>
-                                        #web deb
-                                        #designe
-                                        #tutorial
-                                        #begginers
-                                    </li>
+                                <div class="container asideContainerP">
+                                    <h4>More from Adrian Twarog</h4>
+                                    <div>
+                                        <p>40 Amazing Developers You Should Follow on Youtube</p>
+                                        <li>
+                                            #web deb
+                                            #tutorial 
+                                            #begginers 
+                                            #YouTube
+                                        </li>
+                                    </div>
+                                    <div>
+                                        <p>Portafolio Designe Enchancement - Enchance UI</p>
+                                        <li>
+                                            #web deb
+                                            #designe
+                                            #tutorial
+                                            #begginers
+                                        </li>
+                                    </div>
+                                    <div>
+                                        <p>Enchance UI - Designe for Developers</p>
+                                        <li>
+                                            #web deb
+                                            #designe
+                                            #tutorial
+                                            #begginers
+                                        </li>
+                                    </div>
                                 </div>
 
                         </aside>

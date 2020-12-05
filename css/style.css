@@ -432,6 +432,16 @@ a.bold:hover {
   left: 90%;
 }
 
+.podcastAside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .podcastAside .asideContainer .imagenPodcast {
   width: 30%;
 }
@@ -440,8 +450,13 @@ a.bold:hover {
   background-color: #f9fafa;
 }
 
+.btn {
+  margin-bottom: 11px;
+  margin-top: -13px;
+}
+
 .authorBio .asideContainerP .imagenTwarog {
-  width: 10%;
+  width: 20%;
   border-radius: 50%;
 }
 
@@ -481,5 +496,59 @@ a.bold:hover {
   .div-search {
     width: 100%;
   }
+}
+
+.main-contenido {
+  background-color: #eef0f1;
+}
+
+.Post_main .articulo-main {
+  border-radius: 5px;
+  background: #fff;
+  color: #08090a;
+  -webkit-box-shadow: 0 0 0 1px rgba(8, 9, 10, 0.1);
+          box-shadow: 0 0 0 1px rgba(8, 9, 10, 0.1);
+  overflow-wrap: anywhere;
+}
+
+.Post_main .articulo-main .header_articulo-contenido {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.Post_main .articulo-main .header_articulo-contenido .imagen-contenido {
+  position: relative;
+  width: 100%;
+  padding-top: 42%;
+}
+
+.Post_main .articulo-main .header_articulo-contenido .articulo-parrafo {
+  font-weight: 700;
+  line-height: 1.25;
+  font-size: 1.875;
+}
+
+.Post_main .articulo-main .header_articulo-contenido .boton-subheader {
+  border-radius: 10px;
+  padding: .175rem .55rem;
+}
+
+.Post_main .articulo-main .plaintext {
+  background: #08090a;
+  color: #f8f8f2;
+  overflow: auto;
+  padding: .5rem;
+  border-radius: 5px;
+}
+
+.Post_main .articulo-main .section-discussion {
+  border-radius: 5px;
+}
+
+.Post_main .articulo-main .section-discussion .post-body-top .area-texto {
+  resize: vertical;
+  padding: 0.5em;
+  max-height: 40vh;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

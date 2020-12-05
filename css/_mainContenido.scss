@@ -1,0 +1,59 @@
+ .main-contenido{
+     background-color: $bg-container-fluid;
+ }
+
+ .Post_main{
+    .articulo-main{
+        border-radius: 5px;
+        background: #fff;
+        color: #08090a;
+        box-shadow: 0 0 0 1px rgba(8,9,10,0.1);
+        overflow-wrap: anywhere;
+        .header_articulo-contenido{
+            overflow-wrap: anywhere;
+            word-break: break-word;
+            .imagen-contenido {
+                position: relative;
+                width: 100%;
+                padding-top: 42%;
+            }
+            .articulo-parrafo{
+                font-weight: 700;
+                line-height:1.25;
+                font-size: 1.875;
+
+            }
+            .boton-subheader{
+                border-radius: 10px;
+                padding: .175rem .55rem
+            }
+            .post-body-top{
+                .subheader{
+
+                }
+            }
+        }
+
+        .plaintext{
+            background: #08090a;
+            color: #f8f8f2;
+            overflow: auto;
+            padding: .5rem;
+            border-radius: 5px;
+        }
+        
+        .section-discussion{
+            border-radius: 5px;
+            .post-body-top{
+                .area-texto{ 
+                    resize: vertical;
+                    padding: 0.5em;
+                    max-height: 40vh;
+                    width: 100%;
+                }
+            }
+           
+        }
+    }
+    
+ }
