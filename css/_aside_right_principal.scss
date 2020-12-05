@@ -1,4 +1,6 @@
 .podcastAside{
+    display: flex;
+    flex-direction: column;
 
     .asideContainer{
 
@@ -11,4 +13,9 @@
 
 .asideContainer{ 
     background-color: #f9fafa;
+}
+
+.btn{
+    margin-bottom: 11px;
+    margin-top: -13px;
 }
